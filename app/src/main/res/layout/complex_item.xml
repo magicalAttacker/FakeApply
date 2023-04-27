@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/complexIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/print"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/complexTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+            android:text="测试 • 已同意"
+            android:layout_gravity="center"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/baseline_arrow_drop_up_24"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="32dp"
+            android:layout_height="72dp"
+            app:srcCompat="@drawable/line"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="4dp"
+            style="@style/Widget.Material3.CardView.Filled">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/complexHead"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/complexName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试名称"
+            android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+            android:layout_gravity="center"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/complexStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:text="已同意 • 4/26 17:12"
+            android:textColor="#86878B"
+            android:textAppearance="@style/TextAppearance.Material3.TitleMedium" />
+
+    </LinearLayout>
+
+</LinearLayout>
